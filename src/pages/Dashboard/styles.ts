@@ -5,7 +5,7 @@ interface FormProps {
   hasError: boolean;
 }
 
-const treme = keyframes`
+const shake = keyframes`
         0% {
           margin-left: 0;
         }
@@ -40,7 +40,7 @@ export const Form = styled.form<FormProps>`
   ${props =>
     props.hasError &&
     css`
-      animation: ${treme} 0.2s;
+      animation: ${shake} 0.2s;
     `}
 
   display: flex;
